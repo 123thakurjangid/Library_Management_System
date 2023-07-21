@@ -1,0 +1,57 @@
+﻿@model LibraryManagement.Business.Model.UserModel
+
+<style>
+    body{
+        /*background-image: url('images/Login.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        justify-content: center;
+        text-align: center;*/
+        background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    }
+
+    form {
+        margin-top: 23vh;
+        padding-top: 3vh;
+        padding-bottom: 2vh;
+        border: 1px solid 1px black;
+        background: rgba(0,0,0,0.3);
+        box-shadow: -2px 2px 2px white;
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 38vh;
+        overflow: auto;
+    }
+
+    #inp {
+        margin: 2vh;
+    }
+
+    .inpu {
+        border-radius: 50px;
+        width: 35vh;
+    }
+
+    h1 {
+        margin-bottom: 3vh;
+        text-shadow: -1px 2px 2px white;
+    }
+
+    p {
+        margin-bottom: -2vh;
+    }
+
+</style>
+
+    <form asp-action="Login" asp-controller="User" method="post" class="text-center">
+        <h1 class="text-center">Welcome to Login</h1>
+        <input class="inpu" id="inp" type="email" asp-for="User_email" placeholder="Enter Email" required /><br />
+        <input class="inpu" id="inp" type="password" asp-for="User_Password" placeholder="Enter Password" required /><br />
+        <button type="submit" id="inp" class="btn btn-outline-dark">Login</button><br />
+        <p>Don't have account ?</p><br />
+        <b>@Html.ActionLink("Register Account =>","Registration_form")</b>
+    </form>
+
+    

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<LibraryManagement.Business.Model.BookModel>
+
+<h1>Search Book here</h1><br />
+<form asp-action="SearchBook" asp-controller="Book" method="get">
+    <b>Search By: </b> @Html.RadioButton("searchby","BookCategory",true) <text>Book_Category</text>
+    @Html.RadioButton("searchby","BookTitle") <text>Book_title</text> <l style="margin-left:115vh;">@Html.ActionLink("Go Back <<","HomePage")</l> <br />
+    @Html.TextBox("Search")  <input class="btn btn-outline-dark" type="submit" value="Search" style="box-shadow:2px solid white" /><br /><br />
+</form>
+
+<table>
+    @{
+        var count = 0;
+    }
+    @foreach (var item in Model)
+    {
+        var k = item.AttachmentUrl;
+        var T = item.Book_Pdf;
+
+        <td><img class="sp" src="@Url.Content(k)" /> <br /> <p>@Html.DisplayFor(modelItem => item.Book_Title)</p><br> <a href="@Url.Content(T)"> <button class="btn btn-primary"> Read </button> </a> </td>
+        count++;
+        if (count % 4 == 0)
+        {
+            <tr><br /></tr>
+        }
+
+    }
+</table>
+<style>
+    body {
+        background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    }
+    table{
+       box-shadow: 2px 2px 4px 2px white;
+       border: solid 1px black;
+       justify-content:center;
+       text-align:center;
+       overflow:auto;
+       margin-bottom:2vh;
+    }
+    .sp{
+        margin:3vh;
+        height:181px;
+        width:278px;
+    }button{
+        margin-top:-5vh;
+    }
+    p{
+        margin-top:-2vh;
+    }
+    form{
+        color:whitesmoke;
+    }
+</style>

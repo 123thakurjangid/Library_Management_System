@@ -1,0 +1,36 @@
+﻿@model LibraryManagement.Business.Model.BookModel
+
+<h1 class="text-center text-primary">Book Add Form</h1>
+<form asp-action="SaveBook" asp-controller="Book" method="post" enctype="multipart/form-data">
+    <input class="res" type="text" asp-for="Book_Title" placeholder="Type Book_Title" required/><br />
+    <input class="res" type="text" asp-for="Book_Category" placeholder="Type Book_Category" required/><br />
+    <input class="res" type="text" asp-for="Book_Author" placeholder="Type Book_Author Name" required/><br />
+    <input class="res" type="text" asp-for="Book_Prize" placeholder="Type Book_Prize" required/><br />
+    <textarea class="res" cols="49.5" rows="2" asp-for="Book_Description" placeholder="Book Description...." required></textarea><br />
+    <input class="res" type="file" asp-for="Attachmentfile" accept=".png,.jpg,.jpeg,.gif,.jfif" required /><br />
+    <input class="res" type="file" asp-for="Book_PdfFile" accept=".pdf,.cpp" required /><br />
+    <button type="submit" class="btn btn-outline-dark">Save</button>
+
+</form>
+
+<style>
+    body {
+        background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    }
+    form{
+        margin-top:3vh;
+        padding-top:5vh;
+        padding-bottom:5vh;
+        justify-content:center;
+        text-align:center;
+        overflow:auto;
+        border: 1px solid 1px black;
+        box-shadow: -2px 2px 2px 2px blue;
+        border-radius: 10px;
+    }
+    .res{
+        border-radius:5px;
+        margin:2vh;
+        width:50vh;
+    }
+</style>

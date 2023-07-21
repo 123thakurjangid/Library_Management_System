@@ -1,0 +1,104 @@
+﻿@inject IHttpContextAccessor httpContextAccessor;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LibraryManagement.Web</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/LibraryManagement.Web.styles.css" asp-append-version="true" />
+    <style>
+        #user{
+            margin-left:50vh;
+        }#dmd{
+            width:30px;
+            overflow:hidden;
+        }h4{
+            margin-left:5vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                @*<a class="navbar-brand" asp-area="" asp-controller="User" asp-action="HomePage">LibraryManagement.Web</a>*@
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        @if (!string.IsNullOrEmpty(httpContextAccessor.HttpContext.Session.GetString("UserEmail")))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="user" asp-action="HomePage" data-bs-toggle="offcanvas" data-bs-target="#demo">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="BooksAddForm">Add An Book</a>
+                            </li>
+                        }
+                        @if (string.IsNullOrEmpty(httpContextAccessor.HttpContext.Session.GetString("UserEmail")))
+                        {
+                            <li class="nav-item" style="margin-left:23vh;">
+                                <h4 id="user" class="nav-link text-dark">Library Management System</h4>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <h4 id="user" class="nav-link text-dark">Library Management System</h4>
+                            </li>
+                        }
+                        @if (!string.IsNullOrEmpty(httpContextAccessor.HttpContext.Session.GetString("UserEmail")))
+                        {
+                         <li id="leftho" class="nav-item">
+                                <a id="user" class="nav-link text-dark text-uppercase"><img src="~/Images/Profile Pic.png" id="dmd"/>
+                                    @{
+                                        var username = @httpContextAccessor.HttpContext.Session.GetString("UserEmail");
+                                        foreach (var it in username)
+                                        {
+                                            if (it == '@')
+                                            {
+                                                break;
+                                            }
+                                            @it
+                                        }
+                                    }
+                                </a>
+                         </li>
+                         <li class="nav-item">
+                             <a asp-action="Logout" asp-controller="User" class="nav-link text-dark">Logout</a>
+                         </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - LibraryManagement.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        $(document).ready(function () {
+            var Message = '@TempData["Message"]';
+            if (Message != '') {
+                alert(Message);
+            }
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

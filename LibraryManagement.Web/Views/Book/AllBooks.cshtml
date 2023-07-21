@@ -1,0 +1,61 @@
+﻿@model IEnumerable<LibraryManagement.Business.Model.BookModel>
+
+<a href="https://localhost:7143/Book/HomePage"><par style="color:white;">Go Back <<</par></a>
+
+<table class="table table-dark table-striped table-hover" style="box-shadow: 2px 2px 4px 2px white;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Prize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Book_Description)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Prize)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book_Description)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete", new { id = item.Book_Id})
+            </td>
+        </tr>
+    }
+</table>
+<style>
+    body{
+        background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+    }
+    table{
+        margin-top:2vh;
+    }
+</style>

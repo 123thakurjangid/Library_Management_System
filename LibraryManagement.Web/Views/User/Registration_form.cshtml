@@ -1,0 +1,39 @@
+﻿@model LibraryManagement.Business.Model.UserModel
+
+    <form asp-action="SaveUser" asp-controller="User" method="post" class="text-center">
+        <h1 class="text-center">Welcome to Registration</h1>
+        <input class="inpu" id="inp" type="email" asp-for="User_email" placeholder="Enter Email" required/><br />
+        <input class="inpu" id="inp" type="password" asp-for="User_Password" placeholder="Enter Password" required/><br />
+        <button type="submit" id="inp" class="btn btn-outline-dark">Register</button><br />
+        <b>@Html.ActionLink("Have an account =>","Login")</b>
+    </form>
+
+    <style>
+        body{
+        background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+        }
+        form{
+            margin-top:25vh;
+            padding-top:3vh;
+            padding-bottom:2vh;
+            border:1px solid 1px black;
+            background: rgba(0,0,0,0.3);
+            box-shadow:-2px 2px 2px white;
+            border-radius:10px;
+            width:50%;
+            margin-left:38vh;
+            overflow:auto;
+        }
+        #inp{
+            margin:2vh;
+        }
+        .inpu{
+            border-radius:50px;
+            width:35vh;
+        }h1{
+            margin-bottom:3vh;
+            color:white;
+            text-shadow: -6px 4px 4px black;
+        }
+
+    </style>
