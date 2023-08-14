@@ -1,0 +1,87 @@
+﻿/* ALL BOOKS PAGE CSS */
+#AllbookstblId {
+    margin-top: 5vh;
+}
+
+/* BOOKS ADD FORM PAGE CSS */
+form {
+    margin-top: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+    border: 1px solid 1px black;
+    box-shadow: -2px 2px 2px 2px blue;
+    border-radius: 10px;
+}
+
+.res {
+    border-radius: 5px;
+    margin: 2vh;
+    width: 50vh;
+}
+
+/* Home PAGE CSS */
+.H_table {
+    box-shadow: 2px 2px 4px 2px blue;
+    border: solid 1px black;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+    margin-top: 2vh;
+}
+    .sp{
+        margin:3vh;
+        height:181px;
+        width:278px;
+    }
+#HomePagebtnid {
+    width: 278px;
+    margin-bottom:2vh;
+}
+    p{
+        margin-top:-2vh;
+    }
+    .Menulinks{
+        margin:2vh;
+    }
+
+    /* Search Books Page Css */
+.Stable {
+    box-shadow: 2px 2px 4px 2px white;
+    border: solid 1px black;
+    justify-content: center;
+    text-align: center;
+    overflow: auto;
+    margin-top:4vh;
+    margin-left:5vh;
+}
+
+.Searchsp {
+    padding:2vh;
+    height: 181px;
+    width: 278px;
+}
+
+.Booktit {
+    margin-top: -2vh;
+}
+.searchform{
+    padding-bottom:0%;
+    margin-bottom:2vh;
+}
+.searchbook {
+    text-align: left;
+    align-items: start
+}
+.innersrchbox{
+    margin-left:5vh;
+}
+.inrsrchgoback {
+    margin-left: 110vh;
+}
+#booksrchbtn{
+    width:33vh;
+    margin-bottom:1vh;
+}

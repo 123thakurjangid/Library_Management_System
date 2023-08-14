@@ -11,7 +11,7 @@
         "projectName": "LibraryManagement.Business",
         "projectPath": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Business\\LibraryManagement.Business.csproj",
         "packagesPath": "C:\\Users\\thaku\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thaku\\Source\\Repos\\Library_Management_System\\LibraryManagement.Business\\obj\\",
+        "outputPath": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thaku\\AppData\\Roaming\\NuGet\\NuGet.Config",

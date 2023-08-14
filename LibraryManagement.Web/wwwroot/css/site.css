@@ -16,3 +16,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#user {
+    margin-left: 50vh;
+}
+
+#dmd {
+    width: 30px;
+    overflow: hidden;
+}
+
+h4 {
+    margin-left: 5vh;
+}

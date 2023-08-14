@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VmMK89j1OCMxImcurnxMNKynn+FlRS+o1SK0IJgqJSk=",
+  "Hash": "ihl5HXbMSKM94VUH6ra2Fa9dxeOCHYA6qGZhbyz/q30=",
   "Source": "LibraryManagement.Web",
   "BasePath": "_content/LibraryManagement.Web",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LibraryManagement.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\Books.css",
+      "SourceId": "LibraryManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\",
+      "BasePath": "_content/LibraryManagement.Web",
+      "RelativePath": "css/Books.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Books.css"
+    },
+    {
+      "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\Login.css",
+      "SourceId": "LibraryManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\",
+      "BasePath": "_content/LibraryManagement.Web",
+      "RelativePath": "css/Login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Login.css"
     },
     {
       "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\site.css",

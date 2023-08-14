@@ -1,0 +1,41 @@
+﻿body {
+    /*background-image: url('images/school.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    text-align: center;*/
+    /*background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));*/
+}
+
+.Loginform, .RegForm {
+    margin-top: 23vh;
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    border: 1px solid 1px black;
+    background: rgba(0,0,0,0.3);
+    box-shadow: -2px 2px 2px white;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 38vh;
+    overflow: auto;
+}
+
+#inp {
+    margin: 2vh;
+}
+
+.inpu {
+    border-radius: 50px;
+    width: 35vh;
+}
+
+h1 {
+    margin-bottom: 3vh;
+    text-shadow: -1px 2px 2px white;
+}
+
+p {
+    margin-bottom: -2vh;
+}

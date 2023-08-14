@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\Images\\school.webp"
     },
     {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\Books.css",
+      "PackagePath": "staticwebassets\\css\\Books.css"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
