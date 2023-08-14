@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fUaOmnV3QvA0Cnx6K2qjsTB1uPFHSbRPxtBOZciF7TUFZ0q57jLmBp/um4aAvqt1MASMvu+VG1pOKyGBWVaRtw==",
+  "dgSpecHash": "eCGuqRk0vQaXcs0tBaJLJcMeV5GeilUCsP5G0QgkqZkySGqgpkGSroC1mg1B2umcvwZ4q0ncFp7PyVuhELOcDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thaku\\OneDrive\\Documents\\Visual Studio Projects\\LibraryManagement\\LibraryManagement.Web\\LibraryManagement.Web.csproj",
+  "projectFilePath": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\LibraryManagement.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thaku\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\thaku\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

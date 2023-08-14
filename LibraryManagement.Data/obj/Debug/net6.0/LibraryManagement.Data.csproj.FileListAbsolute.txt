@@ -12,3 +12,17 @@ C:\Users\thaku\OneDrive\Documents\Visual Studio Projects\LibraryManagement\Libra
 C:\Users\thaku\OneDrive\Documents\Visual Studio Projects\LibraryManagement\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.pdb
 C:\Users\thaku\OneDrive\Documents\Visual Studio Projects\LibraryManagement\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.genruntimeconfig.cache
 C:\Users\thaku\OneDrive\Documents\Visual Studio Projects\LibraryManagement\LibraryManagement.Data\obj\Debug\net6.0\ref\LibraryManagement.Data.dll
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\bin\Debug\net6.0\LibraryManagement.Data.deps.json
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\bin\Debug\net6.0\LibraryManagement.Data.runtimeconfig.json
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\bin\Debug\net6.0\LibraryManagement.Data.dll
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\bin\Debug\net6.0\LibraryManagement.Data.pdb
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.csproj.AssemblyReference.cache
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.AssemblyInfoInputs.cache
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.AssemblyInfo.cs
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.dll
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\refint\LibraryManagement.Data.dll
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.pdb
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\LibraryManagement.Data.genruntimeconfig.cache
+C:\Users\thaku\Source\Repos\Library_Management_System\LibraryManagement.Data\obj\Debug\net6.0\ref\LibraryManagement.Data.dll

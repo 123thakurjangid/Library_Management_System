@@ -3762,11 +3762,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thaku\\OneDrive\\Documents\\Visual Studio Projects\\LibraryManagement\\LibraryManagement.Business\\LibraryManagement.Business.csproj",
+      "projectUniqueName": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Business\\LibraryManagement.Business.csproj",
       "projectName": "LibraryManagement.Business",
-      "projectPath": "C:\\Users\\thaku\\OneDrive\\Documents\\Visual Studio Projects\\LibraryManagement\\LibraryManagement.Business\\LibraryManagement.Business.csproj",
+      "projectPath": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Business\\LibraryManagement.Business.csproj",
       "packagesPath": "C:\\Users\\thaku\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thaku\\OneDrive\\Documents\\Visual Studio Projects\\LibraryManagement\\LibraryManagement.Business\\obj\\",
+      "outputPath": "C:\\Users\\thaku\\Source\\Repos\\Library_Management_System\\LibraryManagement.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thaku\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3783,8 +3783,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\thaku\\OneDrive\\Documents\\Visual Studio Projects\\LibraryManagement\\LibraryManagement.Data\\LibraryManagement.Data.csproj": {
-              "projectPath": "C:\\Users\\thaku\\OneDrive\\Documents\\Visual Studio Projects\\LibraryManagement\\LibraryManagement.Data\\LibraryManagement.Data.csproj"
+            "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Data\\LibraryManagement.Data.csproj": {
+              "projectPath": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Data\\LibraryManagement.Data.csproj"
             }
           }
         }

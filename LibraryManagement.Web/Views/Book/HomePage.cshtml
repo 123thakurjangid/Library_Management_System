@@ -14,8 +14,7 @@
     </div>
 </div>
 
-    <div5 class="container mt-3">
-        <div6><b> Welcome to Library </b></div6> <br>
+<div6><b> Welcome to Library </b></div6> <br>
 
 <table>
         @{
@@ -26,7 +25,7 @@
          var k = item.AttachmentUrl;
             var T = item.Book_Pdf;
 
-            <td><img class="sp" src="@Url.Content(k)" /> <br /> <p>@Html.DisplayFor(modelItem => item.Book_Title)</p><br> <a href="@Url.Content(T)"> <button class="btn btn-primary"> Read </button> </a> </td>
+            <td><img class="sp" src="@Url.Content(k)" /> <br /> <p>@Html.DisplayFor(modelItem => item.Book_Title)</p><br> <a href="@Url.Content(T)" target="_blank"> <button class="btn btn-primary"> Read </button> </a> </td>
         count++;
         if (count % 4 == 0)
         {
@@ -43,13 +42,15 @@
        justify-content:center;
        text-align:center;
        overflow:auto;
+       margin-top:2vh;
     }
     .sp{
         margin:3vh;
         height:181px;
         width:278px;
     }button{
-        margin-top:-5vh;
+        margin-top:-7vh;
+        width: 278px;
     }
     p{
         margin-top:-2vh;
@@ -57,4 +58,7 @@
     .Menulinks{
         margin:2vh;
     }
+
 </style>
+
+ 
