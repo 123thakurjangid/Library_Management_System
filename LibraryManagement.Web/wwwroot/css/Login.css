@@ -20,6 +20,7 @@
     width: 50%;
     margin-left: 38vh;
     overflow: auto;
+    margin-bottom:10vh;
 }
 
 #inp {

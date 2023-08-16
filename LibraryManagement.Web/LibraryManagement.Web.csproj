@@ -30,4 +30,13 @@
     <Folder Include="wwwroot\Image\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\call-icon.png" />
+    <None Include="wwwroot\Images\mail-icon.png" />
+    <None Include="wwwroot\Images\map-icon.png" />
+    <None Include="wwwroot\Images\search-icon.png" />
+    <None Include="wwwroot\Images\twitter-icon.png" />
+    <None Include="wwwroot\Images\user-icon.png" />
+  </ItemGroup>
+
 </Project>

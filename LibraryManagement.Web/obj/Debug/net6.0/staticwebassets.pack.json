@@ -9,6 +9,14 @@
       "PackagePath": "staticwebassets\\Image\\Flower.jfif"
     },
     {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Image\\IN THE CARQUINEZ WOODS BOOK COVER.jpg",
+      "PackagePath": "staticwebassets\\Image\\IN THE CARQUINEZ WOODS BOOK COVER.jpg"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Image\\IN THE CARQUINEZ WOODS BOOK PDF.pdf",
+      "PackagePath": "staticwebassets\\Image\\IN THE CARQUINEZ WOODS BOOK PDF.pdf"
+    },
+    {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Image\\Profile pic.jfif",
       "PackagePath": "staticwebassets\\Image\\Profile pic.jfif"
     },
@@ -29,8 +37,32 @@
       "PackagePath": "staticwebassets\\Images\\Profile Pic.png"
     },
     {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\call-icon.png",
+      "PackagePath": "staticwebassets\\Images\\call-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\mail-icon.png",
+      "PackagePath": "staticwebassets\\Images\\mail-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\map-icon.png",
+      "PackagePath": "staticwebassets\\Images\\map-icon.png"
+    },
+    {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\school.webp",
       "PackagePath": "staticwebassets\\Images\\school.webp"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\search-icon.png",
+      "PackagePath": "staticwebassets\\Images\\search-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\twitter-icon.png",
+      "PackagePath": "staticwebassets\\Images\\twitter-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\user-icon.png",
+      "PackagePath": "staticwebassets\\Images\\user-icon.png"
     },
     {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\Books.css",
@@ -47,6 +79,18 @@
     {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\js\\site.js",
