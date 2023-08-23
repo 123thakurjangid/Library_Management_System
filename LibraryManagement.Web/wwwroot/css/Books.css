@@ -23,13 +23,16 @@ form {
 }
 
 /* Home PAGE CSS */
+.homeheader{
+    margin-top:8vh;
+}
 .H_table {
     box-shadow: 2px 2px 4px 2px blue;
     border: solid 1px black;
     justify-content: center;
     text-align: center;
     overflow: auto;
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
     .sp{
         margin:3vh;

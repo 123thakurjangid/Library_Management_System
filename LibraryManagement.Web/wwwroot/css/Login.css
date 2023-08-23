@@ -23,8 +23,11 @@
     margin-bottom:10vh;
 }
 
-#inp {
-    margin: 2vh;
+#inp,#inpbtn {
+    margin: 1.6vh;
+}
+#inpbtn:hover{
+    background-color:transparent;
 }
 
 .inpu {
@@ -33,10 +36,17 @@
 }
 
 h1 {
+    color: brown;
     margin-bottom: 3vh;
     text-shadow: -1px 2px 2px white;
 }
 
 p {
+    color:white;
     margin-bottom: -2vh;
+    padding-top:1vh;
+}
+
+.UserBtn {
+    padding: 2vh;
 }

@@ -1,5 +1,12 @@
+#Layoutheader {
+    margin-top:-0.9vh;
+    background-color: #d2691e
+}
+#MenuBar {
+    box-shadow: -2px 2px 2px white;
+}
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oeDn5T008KPGuNiCYiHo9TcW7vBULhlZOX9VZ9L1S5s=",
+  "Hash": "CinESiDFP0P4lwGTYS/eWGF8nZR0P4vA9Tu4FNh//sI=",
   "Source": "LibraryManagement.Web",
   "BasePath": "_content/LibraryManagement.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
+    },
+    {
+      "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\responsive.css",
+      "SourceId": "LibraryManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\",
+      "BasePath": "_content/LibraryManagement.Web",
+      "RelativePath": "css/responsive.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\responsive.css"
     },
     {
       "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\site.css",
@@ -253,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\call-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\Login Page Image.jpg",
+      "SourceId": "LibraryManagement.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\",
+      "BasePath": "_content/LibraryManagement.Web",
+      "RelativePath": "Images/Login Page Image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Login Page Image.jpg"
     },
     {
       "Identity": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\mail-icon.png",

@@ -1,12 +1,13 @@
 ﻿@model LibraryManagement.Business.Model.UserModel
 
-<form class="Loginform" asp-action="Login" asp-controller="User" method="post" class="text-center">
+<form class="Loginform" id="Loginform1" asp-action="Login" asp-controller="User" method="post" class="text-center">
     <h1 class="text-center">Welcome to Login</h1>
     <input class="inpu" id="inp" type="email" asp-for="User_email" placeholder="Enter Email" required /><br />
     <input class="inpu" id="inp" type="password" asp-for="User_Password" placeholder="Enter Password" required /><br />
-    <button type="submit" id="inp" class="btn btn-outline-dark">Login</button><br />
+    <button type="submit" id="inpbtn" class="btn btn-dark">Login</button><br />
     <p>Don't have account ?</p><br />
-    <b>@Html.ActionLink("Register Account =>","Registration_form")</b>
+    @*<b>@Html.ActionLink("Register Account =>","Registration_form")</b>*@
+    <a href="https://localhost:7143/User/Registration_form"> <p class="UserBtn"><b> Register Account => </b></p> </a>
 </form>
 
     

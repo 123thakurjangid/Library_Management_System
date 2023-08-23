@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
+            <div id="Layoutheader" class="container-fluid">
                 @*<a class="navbar-brand" asp-area="" asp-controller="User" asp-action="HomePage">LibraryManagement.Web</a>*@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
                         @if (!string.IsNullOrEmpty(httpContextAccessor.HttpContext.Session.GetString("UserEmail")))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="user" asp-action="HomePage" data-bs-toggle="offcanvas" data-bs-target="#demo">Home</a>
+                                <a id="MenuBar" class="nav-link text-dark" asp-area="" asp-controller="user" asp-action="HomePage" data-bs-toggle="offcanvas" data-bs-target="#demo">Menu</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Book" asp-action="BooksAddForm">Add An Book</a>
@@ -75,60 +75,86 @@
             @RenderBody()
         </main>
     </div>
+    @if (!string.IsNullOrEmpty(httpContextAccessor.HttpContext.Session.GetString("UserEmail")))
+    {
+        @* Side menu bar code starting *@
+        <div class="offcanvas offcanvas-start text-bg-dark bg-dark text-white-50" id="demo">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">&#128214 Menu</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body text-white">
+                <Ul>
+                    <a href="https://localhost:7143/Book/HomePage"><p class="Menulinks" style="color:white;">&#128073; Home</p></a>
+                    <a href="https://localhost:7143/Book/AllBooks"><p class="Menulinks" style="color:white;">&#128073; View All Books List</p></a>
+                    <a href="https://localhost:7143/Book/SearchBook"><p class="Menulinks" style="color:white;">&#128073; Search Books by Category</p></a>
+                </Ul>
+            </div>
+        </div>
+        @* Side menu bar code ending *@
+    }
+    else
+    {
+        <style>
+            body{
+                background-image : url("/Images/Login Page Image.jpg");
+            }
+        </style>
+    }
 
     <!-- footer section start -->
     @if (!string.IsNullOrEmpty(httpContextAccessor.HttpContext.Session.GetString("UserEmail")))
     {
         <div class="footer_section">
             <div class="container">
-            <div class="footer_location_text">
-                <ul>
-                    <li><img src="@Url.Content("~/images/map-icon.png")"><span class="padding_left_10"><a href="#">Loram Ipusm hosting web</a></span></li>
-                    <li><img src="@Url.Content("~/images/call-icon.png")"><span class="padding_left_10"><a href="#">Call : +91_XXXXXXXXXX</a></span></li>
-                    <li><img src="@Url.Content("~/images/mail-icon.png")"><span class="padding_left_10"><a href="#">demo@gmail.com</a></span></li>
-                </ul>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <h2 class="useful_text">Useful link </h2>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="@Url.Action("HomePage","Book")">Home</a></li>
-                            <li><a href="@Url.Action("About","Home")">About</a></li>
-                            <li><a href="@Url.Action("Enquiry","Home")">Contact Us</a></li>
-                        </ul>
+                <div class="footer_location_text">
+                    <ul>
+                        <li><img src="@Url.Content("~/images/map-icon.png")"><span class="padding_left_10"><a href="#">Loram Ipusm hosting web</a></span></li>
+                        <li><img src="@Url.Content("~/images/call-icon.png")"><span class="padding_left_10"><a href="#">Call : +91_XXXXXXXXXX</a></span></li>
+                        <li><img src="@Url.Content("~/images/mail-icon.png")"><span class="padding_left_10"><a href="#">demo@gmail.com</a></span></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <h2 class="useful_text">Useful link </h2>
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="@Url.Action("HomePage","Book")">Home</a></li>
+                                <li><a href="@Url.Action("About","Home")">About</a></li>
+                                <li><a href="@Url.Action("Enquiry","Home")">Contact Us</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <h2 class="useful_text">Repair</h2>
-                    <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur  adipiscinaliqua  Loreadipiscing </p>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <h2 class="useful_text">Social Media</h2>
-                    <div id="social">
-                        <a class="facebookBtn smGlobalBtn active" href="#"></a>
-                        <a class="twitterBtn smGlobalBtn" href="#"></a>
-                        <a class="googleplusBtn smGlobalBtn" href="#"></a>
-                        <a class="linkedinBtn smGlobalBtn" href="#"></a>
+                    <div class="col-lg-3 col-sm-6">
+                        <h2 class="useful_text">Repair</h2>
+                        <p class="lorem_text">Lorem ipsum dolor sit amet, consectetur  adipiscinaliqua  Loreadipiscing </p>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <h1 class="useful_text">Our Library center</h1>
-                    <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
+                    <div class="col-lg-3 col-sm-6">
+                        <h2 class="useful_text">Social Media</h2>
+                        <div id="social">
+                            <a class="facebookBtn smGlobalBtn active" href="#"></a>
+                            <a class="twitterBtn smGlobalBtn" href="#"></a>
+                            <a class="googleplusBtn smGlobalBtn" href="#"></a>
+                            <a class="linkedinBtn smGlobalBtn" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <h1 class="useful_text">Our Library center</h1>
+                        <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    }
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by Thakur Jangid.</p>
-        </div>
-    </div>
-    <!-- copyright section end -->
+        <!-- footer section end -->
 
+        <!-- copyright section start -->
+        <div class="copyright_section">
+            <div class="container">
+                <p class="copyright_text">2020 All Rights Reserved. Design by Thakur Jangid.</p>
+            </div>
+        </div>
+        <!-- copyright section end -->
+    }
     <!-- Javascript files-->
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/popper.min.js"></script>

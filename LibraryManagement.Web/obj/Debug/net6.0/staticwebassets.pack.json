@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\Image\\file-sample_150kB.pdf"
     },
     {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\Login Page Image.jpg",
+      "PackagePath": "staticwebassets\\Images\\Login Page Image.jpg"
+    },
+    {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\Images\\Profile Pic.png",
       "PackagePath": "staticwebassets\\Images\\Profile Pic.png"
     },
@@ -71,6 +75,10 @@
     {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
       "Id": "C:\\Users\\thaku\\source\\repos\\Library_Management_System\\LibraryManagement.Web\\wwwroot\\css\\site.css",
