@@ -1,14 +1,4 @@
-﻿body {
-    /*background-image: url('images/school.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    justify-content: center;
-    text-align: center;*/
-    /*background: linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));*/
-}
-
+﻿
 .Loginform, .RegForm {
     margin-top: 23vh;
     padding-top: 3vh;
@@ -20,15 +10,17 @@
     width: 50%;
     margin-left: 38vh;
     overflow: auto;
-    margin-bottom:10vh;
+    margin-bottom: 10vh;
+    text-align: center;
 }
 
-#inp,#inpbtn {
+#inp, #inpbtn {
     margin: 1.6vh;
 }
-#inpbtn:hover{
-    background-color:transparent;
-}
+
+    #inpbtn:hover {
+        background-color: transparent;
+    }
 
 .inpu {
     border-radius: 50px;
@@ -42,9 +34,9 @@ h1 {
 }
 
 p {
-    color:white;
+    color: white;
     margin-bottom: -2vh;
-    padding-top:1vh;
+    padding-top: 1vh;
 }
 
 .UserBtn {

@@ -24,7 +24,7 @@ namespace LibraryManagement.Web.Controllers
             string? UserId = HttpContext.Session.GetString("UserID");
             if (string.IsNullOrEmpty(UserName) || string.IsNullOrEmpty(UserId))
             {
-                return RedirectToAction("Login","User");
+                return RedirectToAction("Login", "User");
             }
 
             List<BookModel> ShowBooks = new List<BookModel>();
@@ -116,32 +116,40 @@ namespace LibraryManagement.Web.Controllers
         [HttpGet]
         public IActionResult SearchBook(string searchBy, string Search)
         {
-            List<BookModel> SearchBooks = new List<BookModel>();
-            SearchBooks = bookService.GetAllBooksDetails();
+            try
+            {
+                List<BookModel> SearchBooks = new List<BookModel>();
+                SearchBooks = bookService.GetAllBooksDetails();
 
-            if (searchBy == "BookCategory")
-            {
-                var Search_data = SearchBooks.Where(Model => Model.Book_Category.StartsWith(Search)).ToList();
-                return View(Search_data);
-            }
-            else if (searchBy == "BookTitle")
-            {
-                var Search_data = SearchBooks.Where(Model => Model.Book_Title.StartsWith(Search)).ToList();
-                return View(Search_data);
-            }
-            else
-            {
-                Search = " ";
-                var Search_data = SearchBooks.Where(Model => Model.Book_Category.StartsWith(Search)).ToList();
-                return View(Search_data);
+                if (searchBy == "BookCategory")
+                {
+                    var Search_data = SearchBooks.Where(Model => Model.Book_Category.StartsWith(Search)).ToList();
+                    return View(Search_data);
+                }
+                else if (searchBy == "BookTitle")
+                {
+                    var Search_data = SearchBooks.Where(Model => Model.Book_Title.StartsWith(Search)).ToList();
+                    return View(Search_data);
+                }
+                else
+                {
+                    Search = " ";
+                    var Search_data = SearchBooks.Where(Model => Model.Book_Category.StartsWith(Search)).ToList();
+                    return View(Search_data);
 
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Message"] = "Sorry Nothing to Search !";
+                return RedirectToAction("SearchBook", "Book");
             }
         }
 
         [HttpGet]
         public IActionResult Delete(int Id)
         {
-            if(Id == 0)
+            if (Id == 0)
             {
                 TempData["Message"] = "Record not found to delete";
                 return RedirectToAction("AllBooks", "Book");
@@ -156,6 +164,6 @@ namespace LibraryManagement.Web.Controllers
             }
             return RedirectToAction("AllBooks", "Book");
         }
-        
+
     }
 }

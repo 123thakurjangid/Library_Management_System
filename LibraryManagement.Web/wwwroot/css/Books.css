@@ -4,7 +4,7 @@
 }
 
 /* BOOKS ADD FORM PAGE CSS */
-form {
+.AddBkForm {
     margin-top: 3vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -23,46 +23,66 @@ form {
 }
 
 /* Home PAGE CSS */
-.homeheader{
-    margin-top:8vh;
+.homeheader {
+    margin-top: 8vh;
 }
+
 .H_table {
-    box-shadow: 2px 2px 4px 2px blue;
+    box-shadow: 2px 2px 4px 2px #d2691e;
     border: solid 1px black;
     justify-content: center;
     text-align: center;
     overflow: auto;
     margin-top: 1vh;
 }
-    .sp{
-        margin:3vh;
-        height:181px;
-        width:278px;
-    }
+
+.sp {
+    margin: 3vh;
+    height: 181px;
+    width: 278px;
+}
+
 #HomePagebtnid {
     width: 278px;
-    margin-bottom:2vh;
+    margin-bottom: 2vh;
 }
-    p{
-        margin-top:-2vh;
-    }
-    .Menulinks{
-        margin:2vh;
-    }
 
-    /* Search Books Page Css */
+p {
+    margin-top: -2vh;
+}
+
+.Menulinks {
+    margin: 2vh;
+}
+
+.MailSendingform {
+    margin-top: 15vh;
+    text-align: center;
+    background-color: #d2691e;
+    padding: 1.2vh;
+    margin-bottom: -5.1vh;
+    margin-right: -14.5vh;
+    margin-left: -14.6vh;
+    overflow: hidden;
+}
+
+#mailinput1 {
+    color: white;
+}
+
+/* Search Books Page Css */
 .Stable {
     box-shadow: 2px 2px 4px 2px white;
     border: solid 1px black;
     justify-content: center;
     text-align: center;
     overflow: auto;
-    margin-top:4vh;
-    margin-left:5vh;
+    margin-top: 4vh;
+    margin-left: 5vh;
 }
 
 .Searchsp {
-    padding:2vh;
+    padding: 2vh;
     height: 181px;
     width: 278px;
 }
@@ -70,21 +90,26 @@ form {
 .Booktit {
     margin-top: -2vh;
 }
-.searchform{
-    padding-bottom:0%;
-    margin-bottom:2vh;
+
+.searchform {
+    padding-bottom: 0%;
+    margin-bottom: 2vh;
 }
+
 .searchbook {
     text-align: left;
     align-items: start
 }
-.innersrchbox{
-    margin-left:5vh;
+
+.innersrchbox {
+    margin-left: 5vh;
 }
+
 .inrsrchgoback {
     margin-left: 110vh;
 }
-#booksrchbtn{
-    width:33vh;
-    margin-bottom:1vh;
+
+#booksrchbtn {
+    width: 33vh;
+    margin-bottom: 1vh;
 }

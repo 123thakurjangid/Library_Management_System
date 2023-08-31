@@ -4,9 +4,9 @@
 <br />
 <form class="searchbook" asp-action="SearchBook" asp-controller="Book" method="get">
     <div class="innersrchbox">
-    <b>Search By: </b> @Html.RadioButton("searchby","BookCategory",true) <text>Book_Category</text>
-    @Html.RadioButton("searchby","BookTitle") <text>Book_title</text> <l class="inrsrchgoback">@Html.ActionLink("Go Back <<","HomePage")</l><br />
-    @Html.TextBox("Search")  <input class="btn btn-outline-dark" type="submit" value="Search" style="box-shadow:2px solid white" />
+        <b>Search By: </b> @Html.RadioButton("searchby","BookCategory",true) <text>Book_Category</text>
+        @Html.RadioButton("searchby","BookTitle") <text>Book_title</text> <l class="inrsrchgoback">@Html.ActionLink("Go Back <<","HomePage")</l><br />
+        @Html.TextBox("Search")  <input class="btn-dark" type="submit" value="Search" />
     </div>
 
     <table class="Stable">

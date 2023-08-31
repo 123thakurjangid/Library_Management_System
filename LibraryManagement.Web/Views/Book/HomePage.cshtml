@@ -1,15 +1,16 @@
 ﻿@model IEnumerable<LibraryManagement.Business.Model.BookModel>
 
-<div class="homeheader"><b> Welcome to Library </b></div> <br>
+<div class="homeheader"><b> Welcome to Library </b></div>
+<br>
 
 <table class="H_table">
-        @{
-            var count = 0;
-        }
-        @foreach (var item in Model)
-        {
-         var k = item.AttachmentUrl;
-            var T = item.Book_Pdf;
+    @{
+        var count = 0;
+    }
+    @foreach (var item in Model)
+    {
+        var k = item.AttachmentUrl;
+        var T = item.Book_Pdf;
 
         <td><img class="sp" src="@Url.Content(k)" /> <br /> <p>@Html.DisplayFor(modelItem => item.Book_Title)</p><br> <a href="@Url.Content(T)" target="_blank"> <button id="HomePagebtnid" class="btn btn-primary"> Read </button> </a> </td>
         count++;
@@ -18,5 +19,10 @@
             <tr><br /></tr>
         }
 
-        }
-</table> 
+    }
+</table>
+
+<form class="MailSendingform" asp-controller="User" asp-action="Mailsender" method="post">
+    <m id="mailinput1"> Contact Us : </m> <input id="mailinput2" name="ReciverMail" type="email" class="col-xl-3" name="email" placeholder="type your Email here !">
+    <input class="btn-dark" id="mailbutton" type="submit" value="Send" />
+</form>

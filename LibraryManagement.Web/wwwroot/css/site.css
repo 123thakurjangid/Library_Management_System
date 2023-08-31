@@ -1,27 +1,29 @@
 #Layoutheader {
-    margin-top:-0.9vh;
+    margin-top: -0.9vh;
     background-color: #d2691e
 }
+
 #MenuBar {
     box-shadow: -2px 2px 2px white;
 }
+
 html {
     font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 #user {
@@ -41,12 +43,11 @@ h4 {
 .footer_section {
     width: 100%;
     float: left;
-    /*background-color: #100703;*/
-    background-color:black;
+    background-color: black;
     height: auto;
     padding: 90px 0px;
-    margin-top:3vh;
-    margin-bottom:2vh;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
 }
 
 .footer_location_text {
@@ -253,7 +254,7 @@ a.facebookBtn.smGlobalBtn.active {
     text-align: center;
     margin-left: 0px;
     font-weight: 500;
-    padding:2vh;
+    padding: 2vh;
 }
 
     .copyright_text a {
