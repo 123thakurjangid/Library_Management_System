@@ -116,6 +116,13 @@ namespace LibraryManagement.Web.Controllers
         [HttpGet]
         public IActionResult SearchBook(string searchBy, string Search)
         {
+            string? UserName = HttpContext.Session.GetString("UserEmail");
+            string? UserId = HttpContext.Session.GetString("UserID");
+            if (string.IsNullOrEmpty(UserName) || string.IsNullOrEmpty(UserId))
+            {
+                return RedirectToAction("Login", "User");
+            }
+
             try
             {
                 List<BookModel> SearchBooks = new List<BookModel>();

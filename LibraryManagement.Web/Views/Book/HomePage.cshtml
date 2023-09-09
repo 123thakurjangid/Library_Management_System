@@ -12,7 +12,7 @@
         var k = item.AttachmentUrl;
         var T = item.Book_Pdf;
 
-        <td><img class="sp" src="@Url.Content(k)" /> <br /> <p>@Html.DisplayFor(modelItem => item.Book_Title)</p><br> <a href="@Url.Content(T)" target="_blank"> <button id="HomePagebtnid" class="btn btn-primary"> Read </button> </a> </td>
+        <td><img class="sp" src="@Url.Content(k)" /> <br /> <p class="Booktit">@Html.DisplayFor(modelItem => item.Book_Title)</p><br> <a href="@Url.Content(T)" target="_blank"> <button id="HomePagebtnid" class="btn btn-primary"> Read </button> </a> </td>
         count++;
         if (count % 4 == 0)
         {
