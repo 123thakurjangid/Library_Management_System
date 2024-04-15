@@ -76,8 +76,8 @@ namespace LibraryManagement.Web.Controllers
         {
             try
             {
-                string fromMail = "123thakurjangid@gmail.com";
-                string fromPassword = "fdxbcnpxstughuml";
+                string fromMail = "SenderMail";
+                string fromPassword = "SenderMailSecretkey";
 
                 MailMessage message = new MailMessage();
                 message.From = new MailAddress(fromMail);
